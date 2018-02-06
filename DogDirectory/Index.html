@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html ng-app="ddapp">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Directory</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />    
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+<body ng-app="ddapp">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/Home">Dog Directory</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="\Home">Home</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        <!--<div ng-view class="view-animate"></div>-->
+        <div ng-view></div>
+        <hr />
+       
+    </div>
+
+    <!--3rd party libraries-->
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-animate.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>   
+
+    <!--main-->
+    <script src="app/main.js"></script>
+
+    <!--services-->  
+    <script src="app/services/dataservice.js"></script>
+
+    <!--controllers-->
+    <script src="app/controllers/homecontroller.js"></script>
+</body>
+</html>

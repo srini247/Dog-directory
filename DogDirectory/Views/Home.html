@@ -1,0 +1,23 @@
+﻿
+<div>
+    <div class="row magintop">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-6">
+            <select class="form-control" name="selectedbreed" ng-model="vm.selectedbreed" ng-change="vm.loadimage()" ng-options="b as b for b in vm.breeds track by b">
+                <option value="">--- Select Breed ---</option>
+            </select>
+        </div>
+        <div class="col-md-6">&nbsp;</div>
+
+    </div>
+
+    <div class="row magintop">
+        <div class="col-md-3">&nbsp;</div>
+        <div class="col-md-6" style="padding-left: 0px;  padding-right: 0px;">           
+            <img ng-hide="vm.selectedbreedimg === ''" ng-src="{{vm.selectedbreedimg}}" class="img-responsive">
+        </div>
+        <div class="col-md-3">&nbsp;</div>
+    </div>
+
+</div>
+
